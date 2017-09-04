@@ -1,0 +1,284 @@
+body {
+  font-size: 14px;
+  line-height: 1.6;
+
+}
+/*Header*/
+
+
+/*Navigation*/
+.navbar {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar .container {
+  position: relative;
+}
+
+.navbar-default {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #404040;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: transparent;
+  color: #005FA6;
+}
+
+.navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover,.navbar-default .navbar-nav > .open > a:focus {
+  background-color: transparent;
+  color: #005FA6;
+}
+
+.navbar-default .navbar-nav .active > a,.navbar-default .navbar-nav .active > a:hover,.navbar-default .navbar-nav .active > a:focus {
+  color: #000;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.navbar-default .navbar-toggle,.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
+  border: none;
+  background: #f3f3f3;
+}
+
+.navbar-default .navbar-toggle i {
+  font-size: 31px;
+}
+
+.navbar-default .navbar-collapse {
+  float: right;
+  border-top: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-brand>img {
+  height: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-collapse {
+    padding-left: inherit;
+    padding-right: inherit;
+    }}
+
+@media screen and (max-width: 992px) {
+  .navbar-default .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: none;
+    }}
+
+@media (min-width:768px) {
+  .navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+    }}
+
+.main-navbar-nav {
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;}
+
+.main-navbar-nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1;
+}
+
+.main-navbar-nav li > .dropdown-menu {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;min-width: 225px;
+  border: none;border-top: 2px solid #005FA6;
+}
+
+.main-navbar-nav li > .dropdown-menu > li > a {
+  padding: 10px;
+  position: relative;
+  color: #404040;
+  line-height: 1.12857143;
+  font-size: 12px;
+}
+
+.main-navbar-nav li > .dropdown-menu > li > a:hover,.main-navbar-nav li > .dropdown-menu > li > a:focus {
+  color: #005FA6;
+  background-color: transparent;
+}
+
+.main-navbar-nav li > .dropdown-menu > li > a i {
+  position: absolute;
+  right: 20px;top: 50%;
+  margin-top: -8px;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 993px) {
+  .main-navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    }
+    .main-navbar-nav .dropdown:hover > .dropdown-menu .dropdown:hover .dropdown-menu {
+      left: 225px;top: 0;margin-top: -2px;
+      }}
+
+@media screen and (max-width: 992px) {
+  .main-navbar-nav > li {
+    border-bottom: 1px solid #f3f3f3;
+    }
+    .main-navbar-nav > li:last-child {
+      border-bottom: none;
+      }
+      .main-navbar-nav > li > a {
+        padding-top: 12px;padding-bottom: 12px;
+        }}
+
+.navbar-brand {height: auto;padding: 0;}
+
+@media screen and (max-width: 992px) {
+  .navbar-toggle {
+    display: block;
+    }
+    .navbar-collapse.collapse {
+      display: none !important;
+      }
+      .main-navbar-nav.navbar-nav,.main-navbar-nav.navbar-nav > li
+      {
+        float: none !important;
+        }
+        .navbar-collapse.collapse.in {
+          display: block !important;overflow-y: auto !important;
+          }}
+
+/* Hero */
+.hero_area {
+  background-image: url(img/construction.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+  padding: 0;
+  background-attachment: fixed;
+}
+
+.hero_content {
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero_content h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.hero_content h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  margin-top: 0;
+  line-height: 38px;
+}
+
+/*About*/
+.about_us {
+  padding: 50px 0;
+  background:none repeat scroll 0 0 #F1F1F1;
+}
+
+
+/* Services */
+
+.services {
+  padding: 50px 0;
+  color: #000;
+  width: 100%;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.service-item {
+  margin-bottom: 15px;
+  padding:20px;
+  border:.5px solid #8c8b8b;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  *zoom: 1;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  margin-left: none;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.large-margin {
+  margin-bottom: 30px;
+  border-top: .5px solid #8c8b8b;
+}
+
+/*contact*/
+.contact-area{
+  background:
+}
+.red {
+    color:red;
+    }
+
+.form-area {
+	padding: 10px 40px 60px;
+	margin: 60px 0px 60px;
+	border: .5px solid #8c8b8b;
+	}
+
+  .form-control {
+    border-radius: 0;
+    border: 1px solid #8c8b8b;
+  }
+
+  .btn-primary {
+    color: black;
+    background-color: #fff;
+    border: 1px solid #8c8b8b;
+    border-radius: 0;
+  }
+
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: black;
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+
+  /*footer*/
+  #copyright {
+  }
+
+  #copyright li, #copyright a {
+    color: #000;
+  }
+
+  #footerList {
+    font-weight: bold; 
+  }
