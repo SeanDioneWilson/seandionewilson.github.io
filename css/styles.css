@@ -1,589 +1,386 @@
-<!DOCTYPE html>
-<html>
- <head>
-   <meta charset="utf-8">
-   <title>Homepage</title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">    <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
- <body>
-   <!-- start navbar -->
-   <nav class="navbar navbar-default navbar-fixed-top">
 
-     <!-- this div keeps the hamburger and logo grouped when the hamburger is toggled -->
-     <div class="navbar-header">
-       <!-- hamburger junk/instructions to collapse -->
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-portfolio" aria-expanded="false">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-       </button>
-       <!-- Close hamburger junk -->
+/*---------------phone styles-----------------*/
 
-       <!-- logo -->
-       <a href="#" class="navbar-brand"><img src="img/Seagull-logo.png" alt=""></a>
-     </div>
+/* Portrait and Landscape */
+@media only screen
+  and (max-width: 640px) {
 
-     <!-- navbar links -->
-     <div class="collapse navbar-collapse" id="navbar-portfolio">
-       <ul class="nav navbar-nav">
-         <li><a  href="#about">About</a></li>
-         <li><a href="#projects">Projects</a></li>
-         <li><a href="#contact">Contact</a></li>
-       </ul>
-     </div>
-   </nav>
-   <!-- close navbar -->
+    #content {
+      margin-top: 25%;
+    }
 
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-8 col-lg-offset-2">
+    h2.slogan {
+      display: none;
+    }
 
-         <div id="content">
-           <h2><span class="name">Sean Wilson,</span> front end developer</h2>
-           <h2 class="slogan">Reach new heights with your site</h2>
-           <hr>
-           <a class="btn btn-default btn-lg" href="#projects">View Projects</a>
-         </div>
+    p.about{
+      text-align: left;
+    }
 
-       </div>
-     </div>
-   </div>
-   <div class="container">
-     <div class="col-lg-6 col-lg-offset-3">
-       <div class="thumbnail">
-         <img src="img/sean.jpg" alt="">
+    .hideMobile{
+      display: none;
+    }
 
-       </div>
-   </div>
+    .container-1 h2 {
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
 
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-12" id="about">
-         <p class="about" >I'm a freelance web designer located in Tukwila, Wa. My focus is on helping construction companies accurately reflect what their brand truly represents.</p>
+    hr{
+      display: none;
+    }
 
-         <p class="about ">If your looking to start a project together feel free to <a href="#contact">contact me</a> so we can start the process. Cant wait to hear from you!</p>
-       </div>
+    .btn-default{
+      margin-bottom: 20%;
+    }
+
+}
+
+/*navbar styles*/
+
+.navbar-brand img {
+    position: absolute;
+    /*width: 100%;*/
+    left: 50%;
+    top: 0;
+    margin-left: -60px;
+    height: 60px;
+}
 
 
-       </div>
-     </div>
-   </div>
+.navbar-toggle {
+    z-index:3;
+    border-radius: 0;
+}
 
-   <div class="">
-     <h2>Recent Projects</h2>
-   </div>
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
 
-   <!-- open grid- portfolio projects -->
-   <div class="container" id="projects">
+.navbar-default {
+  background: rgba(230, 221, 221, 0.7);
+}
 
-     <div class="row">
-       <!-- start column -->
-       <div class=" col-lg-6">
-         <div class="thumbnail">
-           <div class="imageHolder">
-             <a href="security-sample/index.html">
-               <img
-               srcset="img/constructionmobile.jpg 480w,
-                       img/constructionmobile600.jpg 600w,
-                       img/construction.jpg 800w"
-              sizes=" (max-width: 480px) 480px,
-                      (max-width: 600px) 600px,
-                      800px"
-               class="cover"
-               src="img/construction.jpg"
-               alt=""></a>
-             <div class="overlay hideMobile">
-               <a href="security-sample/index.html"><h2>General Contractor Sample</h2></a>
-             </div>
-           </div>
+.navbar-nav>li>a {
+  line-height: 30px;
+  color: #908989;
+}
 
-         </div>
-         </div>
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    background: rgba(255, 255, 255, 0.86);
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid #9c9792;
+}
 
+@media only screen and (max-width: 1100px){
 
-         <!-- start column -->
-         <div class=" col-lg-6">
-           <div class="thumbnail">
-             <div class="imageHolder">
-               <a href="/builder-sample/index.html">
-                 <img
-                 srcset="img/b2mobile.jpg 480w,
-                         img/b2mobile600.jpg 600w,
-                         img/b2.jpg 800w"
-                 sizes="(max-width: 480px) 440px,
-                        (max-width: 600px) 580px,
-                        800px"
-                 src="img/b2.jpg"
-                 class="cover"
+.navbar-header {
+    float: left;
+    border-bottom: 1px solid #9c9792;
+    background: rgba(255, 255, 255, 0.86);
+    height: 61px;
+}
+}
 
-                 alt="">
-               </a>
-               <div class="overlay hideMobile">
-                 <a href="/builder-sample/index.html"><h2>Architect Firm Sample</h2></a>
-               </div>
-             </div>
+/*icon bar*/
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
 
-           </div>
-           </div>
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 5px;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: white;
+}
 
 
-     </div>
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .navbar-header {
+      float: left;
+      border-bottom: 1px solid #e27e14;
+      background: rgba(255, 255, 255, 0.86);
+      height: 61px;
+  }
+}*/
 
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
 
- </div>
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0;
+}
 
- <div class="container hide">
-   <div class="row">
-     <div class="col-lg-8 col-lg-offset-2">
-       <p class="about">The web is constantly growing and standards are always changing. If your company hasn't updated their web presence in a few years chances are you're losing out on more than a few potential clients. Just think about it. I'm sure you've clicked on a website that took too long to load, didn't look good on your phone or had links that weren't working and instead of stumbling around the site you clicked out and found another site to go to.</p>
-       <p class="about"> I have made it my job to make sure you're getting the most out of your website by having a beautiful design that keeps people coming and directs their journey. </p>
-     </div>
-   </div>
- </div>
+/*change navbar breakpoint*/
 
- <!-- form junk -->
-  <div class = "container col-md-12" id = "contact">
-  <h2>Contact Me: sean@seanwstudio.com</h2>
-  </div>
-
-<!--   <div class="container" id="contact">
-   <h2>Let's work together!</h2>
-   <div class="formjunk col-lg-8 col-lg-offset-2">
-   <form id="formbtm">
-
-     <div class="row">
-       <div class="form-group col-lg-6">
-           <input class="form-control" type="text" name="" value="" placeholder="First name">
-       </div>
-       <div class="form-group col-lg-6">
-         <input class="form-control" type="text" name="" value="" placeholder="Last Name">
-       </div>
-     </div>
-
-
-     <div class="row">
-       <div class="form-group col-lg-12">
-         <input class="form-control" type="email" name="" value="" placeholder="Email">
-       </div>
-     </div>
-
-     <div class="row">
-       <div class="form-group col-lg-12">
-         <textarea class="form-control" rows="8" cols="80" form="formbtm"></textarea>
-       </div>
-     </div>
-
-     <button class="btn btn-default btn-lg">Submit</button>
-   </form>
- </div>
-
- /*---------------phone styles-----------------*/
-
- /* Portrait and Landscape */
- @media only screen
-   and (max-width: 640px) {
-
-     #content {
-       margin-top: 25%;
-     }
-
-     h2.slogan {
-       display: none;
-     }
-
-     p.about{
-       text-align: left;
-     }
-
-     .hideMobile{
-       display: none;
-     }
-
-     .container-1 h2 {
-       margin-top: 20%;
-       margin-bottom: 10%;
-     }
-
-     hr{
-       display: none;
-     }
-
-     .btn-default{
-       margin-bottom: 20%;
-     }
-
- }
-
- /*navbar styles*/
-
- .navbar-brand img {
-     position: absolute;
-     /*width: 100%;*/
-     left: 50%;
-     top: 0;
-     margin-left: -60px;
-     height: 60px;
- }
-
-
- .navbar-toggle {
-     z-index:3;
-     border-radius: 0;
- }
-
- .navbar-default .navbar-toggle {
-   border-color: white;
- }
-
- .navbar-default {
-   background: rgba(230, 221, 221, 0.7);
- }
-
- .navbar-nav>li>a {
-   line-height: 30px;
-   color: #908989;
- }
-
- .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-     background: rgba(255, 255, 255, 0.86);
-     font-size: 1.2rem;
-     text-align: center;
-     border-bottom: 1px solid #9c9792;
- }
-
- @media only screen and (max-width: 1100px){
-
- .navbar-header {
-     float: left;
-     border-bottom: 1px solid #9c9792;
-     background: rgba(255, 255, 255, 0.86);
-     height: 61px;
- }
- }
-
- /*icon bar*/
- .navbar-default .navbar-toggle .icon-bar {
-     background-color: black;
- }
-
- .navbar-toggle .icon-bar+.icon-bar {
-     margin-top: 5px;
- }
-
- .navbar-default .navbar-toggle {
-     border: none;
- }
-
- .navbar-default .navbar-toggle:hover {
-     background-color: white;
- }
-
-
- /* Custom, iPhone Retina */
- @media only screen and (max-width : 320px) {
-   .navbar-header {
-       float: left;
-       border-bottom: 1px solid #e27e14;
-       background: rgba(255, 255, 255, 0.86);
-       height: 61px;
-   }
- }*/
-
-
- .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-   background: transparent;
- }
-
- .navbar-fixed-top {
-     top: 0;
-     border-width: 0;
- }
-
- /*change navbar breakpoint*/
-
- @media (max-width: 1100px) {
-     .navbar-header {
-         float: none;
-     }
-     .navbar-left,.navbar-right {
-         float: none !important;
-     }
-     .navbar-toggle {
-         display: block;
-     }
-     .navbar-collapse {
-         border-top: 1px solid transparent;
-         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-     }
-     .navbar-fixed-top {
-         top: 0;
-         border-width: 0 0 1px;
-     }
-     .navbar-collapse.collapse {
-         display: none!important;
-     }
-     .navbar-nav {
-         float: none!important;
-         margin-top: 7.5px;
-     }
-     .navbar-nav>li {
-         float: none;
-     }
-     .navbar-nav>li>a {
-         padding-top: 10px;
-         padding-bottom: 10px;
-     }
-     .collapse.in{
-         display:block !important;
-     }
-    .navbar-nav .open .dropdown-menu {
-        position: static;
+@media (max-width: 1100px) {
+    .navbar-header {
         float: none;
-        width: auto;
-        margin-top: 0;
-        background-color: transparent;
-        border: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-     }
- }
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+}
+
+/*jumbotron area*/
+
+.container-1 {
+  margin-bottom:10%;
+  background-image:;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  text-align: center;
+  padding-top: 10%;
+
+}
+
+
+
+span.name {
+  color: #9c9792;
+  font-size: 40px;
+}
+
+/*call to action section--above the footer*/
+
+
+
+/*projects area*/
+#projects {
+  /*padding-top: 5%;*/
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(23, 23, 23, 0.56);
+  color: white;
+}
+
+img > .thumbnail {
+  width: 50%;
+  margin: auto;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h2 {
+  font-size: 3em;
+}
 
- /*jumbotron area*/
+.overlay h3, .overlay h2 {
+  margin-left: 15px;
+}
 
- .container-1 {
-   margin-bottom:10%;
-   background-image:;
-   background-repeat: no-repeat;
-   background-size: cover;
- }
+.overlay a {
+  color: white;
+}
 
- #content {
-   text-align: center;
-   padding-top: 10%;
+img.cover {
+  object-fit: cover;
+}
 
- }
+/*footer area styles*/
 
+footer p {
+  font-size: 1.5em;
+  background-color: #fff;
+  margin-bottom: 0;
+}
 
 
- span.name {
-   color: #9c9792;
-   font-size: 40px;
- }
 
- /*call to action section--above the footer*/
+/*page overview styles--body/wrapper*/
 
+body {
+  font-family: 'Roboto', sans-serif;
 
+}
 
- /*projects area*/
- #projects {
-   /*padding-top: 5%;*/
- }
+html {
+  height: 100%;
+}
 
- .overlay {
-   position: absolute;
-   top: 0;
 
-   left: 0;
 
-   height: 100%;
-   width: 100%;
-   opacity: 0;
-   transition: .5s ease;
-   background-color: rgba(23, 23, 23, 0.56);
-   color: white;
- }
 
- img > .thumbnail {
-   width: 50%;
-   margin: auto;
- }
 
- .thumbnail:hover .overlay {
-   opacity: 1;
- }
+/*font-awesome stles*/
 
- .overlay h2 {
-   font-size: 3em;
- }
+.fa {
+  font-size: 40px;
+  margin: 15px 30px;
+  color: #9c9792;
+}
 
- .overlay h3, .overlay h2 {
-   margin-left: 15px;
- }
+/*link styles*/
+.navbar-default .navbar-nav>li>a {
+  color: #908989;
+  font-size: 2rem;
+}
 
- .overlay a {
-   color: white;
- }
 
- img.cover {
-   object-fit: cover;
- }
+.tempborder {
+  border: 1px dashed red;
+}
 
- /*footer area styles*/
+/*font styles*/
 
- footer p {
-   font-size: 1.5em;
-   background-color: #fff;
-   margin-bottom: 0;
- }
+* {
+  font-size: 16px;
+}
 
+.container-1 h2 {
+  text-shadow: 1px 1px white;
+}
 
+h1, h3 {
+  color: white;
+}
 
- /*page overview styles--body/wrapper*/
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+}
 
- body {
-   font-family: 'Roboto', sans-serif;
+hr {
+  width: 400px;
+  border-top: 1px solid #000;
+}
 
- }
 
- html {
-   height: 100%;
- }
+p {
+  text-align: center;
+}
 
+.about {
+  font-size: 2em;
+  text-align: justify;
+  margin-bottom: 8px;
+}
 
+#about {
+  padding-top: 65px;
+}
 
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
 
 
- /*font-awesome stles*/
+  .thumbnail {
+  padding: 0;
+  border: 0 none;
+  box-shadow: none;
+}
 
- .fa {
-   font-size: 40px;
-   margin: 15px 30px;
-   color: #9c9792;
- }
 
- /*link styles*/
- .navbar-default .navbar-nav>li>a {
-   color: #908989;
-   font-size: 2rem;
- }
+body {
+  font-family: 'Rokkitt', serif;
+}
 
+btn-group-lg>.btn, .btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0;
+}
 
- .tempborder {
-   border: 1px dashed red;
- }
+.btn-default {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #000;
+    margin-top: 18px;
+}
 
- /*font styles*/
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: #9c9792;
+    background-color: #fff;
+    /*border: 1px solid black;*/
+}
 
- * {
-   font-size: 16px;
- }
+form .btn-default {
+    color: rgb(6, 6, 6);
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #ccc;
+}
 
- .container-1 h2 {
-   text-shadow: 1px 1px white;
- }
+.form-control {
+  border-radius: 0;
+}
 
- h1, h3 {
-   color: white;
- }
+#contact {
+  padding-top:65px;
+}
 
- h1 {
-   font-weight: 700;
-   font-size: 5em;
- }
+.container {
+  margin-bottom: 6%;
 
- hr {
-   width: 400px;
-   border-top: 1px solid #000;
- }
 
+}
 
- p {
-   text-align: center;
- }
-
- .about {
-   font-size: 2em;
-   text-align: justify;
-   margin-bottom: 8px;
- }
-
- #about {
-   padding-top: 65px;
- }
-
- h2 {
-   text-align: center;
-   margin-bottom: 30px;
-   font-size: 2em;
- }
-
-
-   .thumbnail {
-   padding: 0;
-   border: 0 none;
-   box-shadow: none;
- }
-
-
- body {
-   font-family: 'Rokkitt', serif;
- }
-
- btn-group-lg>.btn, .btn-lg {
-     padding: 10px 16px;
-     font-size: 18px;
-     line-height: 1.3333333;
-     border-radius: 0;
- }
-
- .btn-default {
-     color: rgb(0, 0, 0);
-     background-color: rgba(255, 255, 255, 0);
-     border-color: #000;
-     margin-top: 18px;
- }
-
- .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
-     color: #9c9792;
-     background-color: #fff;
-     /*border: 1px solid black;*/
- }
-
- form .btn-default {
-     color: rgb(6, 6, 6);
-     background-color: rgba(255, 255, 255, 0);
-     border-color: #ccc;
- }
-
- .form-control {
-   border-radius: 0;
- }
-
- #contact {
-   padding-top:65px;
- }
-
- .container {
-   margin-bottom: 6%;
-
-
- }
-
- .imageHolder {
-   position:relative;
- }
-
- </div> -->
-
-
-   <!-- footer -->
-   <footer>
-     <p>
-       <a href="https://github.com/SeanDioneWilson"><i class="fa fa-github" aria-hidden="true"></i></a>
-       <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-       <a href="https://www.instagram.com/devseanwilson/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-     </p>
-     <p>Copyright &copy 2017 All rights reserved </p>
-     <p>Sean Dione Wilson</p>
-   </footer>
-
- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
- <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
- </body>
-</html>
+.imageHolder {
+  position:relative;
+}
