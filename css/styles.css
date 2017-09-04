@@ -43,7 +43,7 @@
     /*width: 100%;*/
     left: 50%;
     top: 0;
-    margin-left: -14%;
+    margin-left: -60px;
     height: 60px;
 }
 
@@ -198,17 +198,17 @@ span.name {
 
 /*projects area*/
 #projects {
-  padding-top: 5%;
+  /*padding-top: 5%;*/
 }
 
 .overlay {
   position: absolute;
   top: 0;
-  bottom: 0;
+
   left: 0;
-  right: 0;
+
   height: 100%;
-  /*width: 500px;*/
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(23, 23, 23, 0.56);
@@ -225,7 +225,7 @@ img > .thumbnail {
 }
 
 .overlay h2 {
-  font-size: 25px;
+  font-size: 3em;
 }
 
 .overlay h3, .overlay h2 {
@@ -276,7 +276,7 @@ html {
 /*link styles*/
 .navbar-default .navbar-nav>li>a {
   color: #908989;
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 
@@ -377,7 +377,10 @@ form .btn-default {
 
 .container {
   margin-bottom: 6%;
-  padding-left: 4%;
-  padding-right: 4%;
 
+
+}
+
+.imageHolder {
+  position:relative;
 }
