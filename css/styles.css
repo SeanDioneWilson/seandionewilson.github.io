@@ -17,7 +17,7 @@
       text-align: left;
     }
 
-    .hide{
+    .hideMobile{
       display: none;
     }
 
@@ -43,7 +43,7 @@
     /*width: 100%;*/
     left: 50%;
     top: 0;
-    margin-left: -60px;
+    margin-left: -14%;
     height: 60px;
 }
 
@@ -68,7 +68,7 @@
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background: rgba(255, 255, 255, 0.86);
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
     border-bottom: 1px solid #9c9792;
 }
@@ -185,11 +185,7 @@
 
 }
 
-.wrapper {
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-bottom: 10px;
-}
+
 
 span.name {
   color: #9c9792;
@@ -381,4 +377,7 @@ form .btn-default {
 
 .container {
   margin-bottom: 6%;
+  padding-left: 4%;
+  padding-right: 4%;
+
 }
