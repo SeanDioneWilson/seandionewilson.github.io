@@ -6,7 +6,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">    <link rel="stylesheet" href="css/styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
  </head>
  <body>
    <!-- start navbar -->
@@ -44,7 +44,7 @@
 
          <div id="content">
            <h2><span class="name">Sean Wilson,</span> front end developer</h2>
-           <h2>Reach new heights with your site</h2>
+           <h2 class="slogan">Reach new heights with your site</h2>
            <hr>
            <a class="btn btn-default btn-lg" href="#projects">View Projects</a>
          </div>
@@ -63,11 +63,11 @@
    <div class="container">
      <div class="row">
        <div class="col-lg-8 col-lg-offset-2" id="about">
-         <p class="about" >I'm a freelance web designer located in Tukwila, Wa. My focus is on helping construction companies accurately reflect what their brand truly represents. I use html, css, bootstrap, javascript, jquery along woth other programming languages and resources to design and implement your vision for your website.</p>
+         <p class="about" >I'm a freelance web designer located in Tukwila, Wa. My focus is on helping construction companies accurately reflect what their brand truly represents.</p>
 
-         <p class="about">In my free time I like to get outdoors and dabble in art. I've been interested in web design and development for a while now and am really excited to have the opportunity to do what I love full time.</p>
+         <p class="about hide">In my free time I like to get outdoors and dabble in art. I've been interested in web design and development for a while now and am really excited to have the opportunity to do what I love full time.</p>
 
-         <p class="about">If your looking to start a project together feel free to <a href="#contact">contact me</a> so we can start the process. Cant wait to hear from you!</p>
+         <p class="about ">If your looking to start a project together feel free to <a href="#contact">contact me</a> so we can start the process. Cant wait to hear from you!</p>
        </div>
 
 
@@ -86,9 +86,17 @@
        <!-- start column -->
        <div class=" col-lg-6">
          <div class="thumbnail">
-           <img class="cover" src="img/construction.jpg" alt="">
-           <div class="overlay">
-             <a target="_blank" href="security-sample/index.html"><h2>General Contractor Sample</h2></a>
+           <a href="security-sample/index.html">
+             <img
+             srcset="img/constructionmobile.jpg 480w,
+                     img/construction.jpg 800w"
+            sizes=" (max-width: 480px) 440px,
+                    800px"
+             class="cover"
+             src="img/construction.jpg"
+             alt=""></a>
+           <div class="overlay hide">
+             <a href="security-sample/index.html"><h2>General Contractor Sample</h2></a>
            </div>
          </div>
          </div>
@@ -97,9 +105,19 @@
          <!-- start column -->
          <div class=" col-lg-6">
            <div class="thumbnail">
-             <img class="cover" src="img/b2.jpg" alt="">
-             <div class="overlay">
-               <a target="_blank" href="/builder-sample/index.html"><h2>Architect Firm Sample</h2></a>
+             <a href="/builder-sample/index.html">
+               <img
+               srcset="img/b2mobile.jpg 480w,
+                       img/b2.jpg 800w"
+               sizes="(max-width: 480px) 440px,
+                      800px"
+               src="img/b2.jpg"
+               class="cover"
+
+               alt="">
+             </a>
+             <div class="overlay hide">
+               <a href="/builder-sample/index.html"><h2>Architect Firm Sample</h2></a>
              </div>
            </div>
            </div>
@@ -111,7 +129,7 @@
 
  </div>
 
- <div class="container">
+ <div class="container hide">
    <div class="row">
      <div class="col-lg-8 col-lg-offset-2">
        <p class="about">The web is constantly growing and standards are always changing. If your company hasn't updated their web presence in a few years chances are you're losing out on more than a few potential clients. Just think about it. I'm sure you've clicked on a website that took too long to load, didn't look good on your phone or had links that weren't working and instead of stumbling around the site you clicked out and found another site to go to.</p>
@@ -121,7 +139,7 @@
  </div>
 
  <!-- form junk -->
-  <div class = "container" id = "contact">
+  <div class = "container col-md-12" id = "contact">
   <h2>Let's work together!</h2>
   <h2>sean@seanwstudio.com</h2>
   </div>
@@ -162,9 +180,9 @@
    <!-- footer -->
    <footer>
      <p>
-       <a target="_blank" href="https://github.com/SeanDioneWilson"><i class="fa fa-github" aria-hidden="true"></i></a>
+       <a href="https://github.com/SeanDioneWilson"><i class="fa fa-github" aria-hidden="true"></i></a>
        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-       <a target="_blank" href="https://www.instagram.com/devseanwilson/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+       <a href="https://www.instagram.com/devseanwilson/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
      </p>
      <p>Copyright &copy 2017 All rights reserved </p>
      <p>Sean Dione Wilson</p>
