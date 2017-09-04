@@ -21,6 +21,19 @@
       display: none;
     }
 
+    .container-1 h2 {
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+
+    hr{
+      display: none;
+    }
+
+    .btn-default{
+      margin-bottom: 20%;
+    }
+
 }
 
 /*navbar styles*/
