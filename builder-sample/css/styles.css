@@ -13,14 +13,17 @@ body {
   border: none;
 }
 
+.imageHolder{
+  position: relative;
+}
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
-  width: 500px;
+  width: 100%;
   opacity: 0;
   transition: .5s ease;
   background-color: rgba(23, 23, 23, 0.56);
@@ -37,6 +40,7 @@ body {
 
 .col-lg-6 img {
   margin: 0;
+  width: 100%;
 }
 
 .recent-projects {
