@@ -1,0 +1,188 @@
+/*color schemes*/
+.dark-bg{
+  background-color: #121215;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #37383d;
+    border-color: #595a64;
+}
+
+.grey-bg{
+  background-color: #37383d;
+}
+
+/*font styles*/
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.larger-font {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: 'Monoton', cursive;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.grey-link{
+  color: #595a64;
+}
+
+.grey-link:hover{
+  color: #595a64;
+}
+
+.blue-link{
+  color: #1049b5;
+}
+
+
+
+
+
+/*spacing that effects more than one section*/
+
+.card-title-header {
+  margin-top: 9rem;
+}
+
+.other-title-header {
+  margin-top: 4.5rem;
+}
+
+.large-margin {
+  margin-bottom: 11rem;
+}
+
+.no-border {
+  border: 0;
+}
+
+.no-margin-bottom{
+  margin-bottom:0;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+.margin-right{
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+
+
+/*borders that effect more than one section*/
+
+.card {
+  border-radius: 0;
+}
+
+
+/*navigation*/
+
+.navbar-nav .active {
+  border-bottom: 1px solid;
+}
+
+
+
+/*service section on hompeage*/
+.fa-3x {
+  margin-bottom: 2rem;
+}
+
+h2{
+  margin-bottom: 1.5rem;
+}
+
+
+.top-padding{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+/*project section on homepage*/
+
+.projects-h2 {
+  margin-bottom: 3.5rem;
+}
+
+
+.project {
+  padding: 3rem;
+}
+
+.projects-container {
+  padding-top: 5rem;
+  padding-bottom:10rem;
+}
+
+/*email section on homepage*/
+
+.email{
+  font-size: 1.8rem;
+}
+
+/*about page*/
+
+.about-top {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about-font {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 2rem;
+}
+
+.img-div {
+  margin-bottom: 5rem;
+}
+
+.intro {
+  margin-bottom: 6rem;
+}
+
+.process {
+  margin-bottom: 8rem;
+}
+
+.process-header {
+  margin-bottom: 3rem;
+}
+
+.fa-top {
+  margin-top: 2rem;
+}
+
+.question {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.about-card{
+  margin-bottom: 3rem;
+}
+/*--------------------------blog page--------------------------*/
+
+.post p {
+  margin-bottom: 0;
+}
+
+.post {
+  padding: 2rem 0;
+}
+
+.post h3 {
+  margin-bottom: 2rem;
+}
